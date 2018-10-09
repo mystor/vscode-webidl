@@ -1,0 +1,26 @@
+{
+    "name": "webidl",
+    "displayName": "webidl",
+    "description": "WebIDL, XPIDL, and MSIDL syntax highlighting",
+    "version": "0.0.1",
+    "publisher": "mystor",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "webidl",
+            "aliases": ["IDL", "webidl"],
+            "extensions": [".idl",".webidl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "webidl",
+            "scopeName": "source.webidl",
+            "path": "./syntaxes/webidl.tmLanguage"
+        }]
+    }
+}
